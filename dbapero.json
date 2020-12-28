@@ -27,38 +27,72 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1,
+      "datum": "15.12.2020",
+      "teilnehmer": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "themen": [
+        {
+          "name": "Segeln",
+          "description": "Weltumselgelung",
+          "links": [
+            "https://segelreporter.com/regatta/vendee-globe-worauf-es-wirklich-ankommt-kleine-stories-rund-um-den-hochseesteg/"
+          ]
+        },
+        {
+          "name": "Paxcounter",
+          "description": "Zählt Paxe per WLAN",
+          "links": [
+            "https://github.com/cyberman54/ESP32-Paxcounter",
+            "https://www.heise.de/make/meldung/Paxcounter-Personen-zaehlen-mit-WLAN-Modul-4301556.html"
+          ]
+        }
+      ]
     }
   ],
   "users": [
     {
-      "id": 0,
-      "name": "gaby",
-      "image": "images/gaby.jpg",
-      "twitterhandle": "@Bahnhofsoma"
-    },
-    {
       "id": 1,
       "name": "hagen",
-      "image": "images/hagen.jpg",
+      "image": "assets/hagen.jpg",
       "twitterhandle": "@hagengraf"
     },
     {
       "id": 2,
       "name": "quentin",
-      "image": "images/quentin.jpg",
+      "image": "assets/quentin.jpg",
       "twitterhandle": "@Der_Que"
     },
     {
       "id": 3,
       "name": "felix",
-      "image": "images/felix.jpg",
+      "image": "assets/felix.jpg",
       "twitterhandle": "@greentowngg"
     },
     {
       "id": 4,
       "name": "siggi",
-      "image": "images/siggi.jpg",
+      "image": "assets/siggi.jpg",
       "twitterhandle": "@cocoate"
+    },
+    {
+      "name": "gaby",
+      "image": "assets/gaby.jpg",
+      "twitterhandle": "@Bahnhofsoma",
+      "id": 5
+    },
+    {
+      "name": "kolega",
+      "image": "assets/kolega.jpg",
+      "twitterhandle": "@fimidi",
+      "id": 6
     }
   ]
 }

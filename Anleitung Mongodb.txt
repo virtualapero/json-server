@@ -1,0 +1,30 @@
+### Datenbank mit Namen apero erstellen
+
+use apero
+
+### Befüllen der Collection Users
+
+db.users.insert({"name": "hagen","image": "assets/hagen.jpg","twitterhandle": "@hagengraf"});
+
+db.users.insert({"name": "quentin","image": "assets/quentin.jpg","twitterhandle": "@Der_Que"});
+
+db.users.insert({"name": "felix","image": "assets/felix.jpg","twitterhandle": "@greentowngg"});
+
+db.users.insert({"name": "siggi","image": "assets/siggi.jpg","twitterhandle": "@cocoate"});
+
+db.users.insert({"name": "gaby","image": "assets/gaby.jpg","twitterhandle": "@Bahnhofsoma"});
+
+db.users.insert({"name": "kolega","image": "assets/kolega.jpg","twitterhandle": "@fimidi"});
+
+
+### Befüllen der Collection Aperos
+
+db.aperos.insert({"datum":ISODate("2020-12-22T19:00:31.679Z"),"teilnehmer": [0,1,2,4],"themen":[{"name": "3D-Drucker", "description":"Prusa-Drucker, wie isn der so?","links":[{"linkname": "Herstellerseite für den Prusa 3 3D-Drucker","url":"https://www.prusa3d.de/"},{"linkname":"Blogartikel von Felix zum Aufbau des Prusa-Druckers","url":"https://kaube-felix.de/blog.html"}]},{"name": "Angular", "description":"Webapp mit Angular für den Virtual Apero","links":[{"linkname": "Tutorial für Angular Material","url":"https://code-maze.com/get-started-angular-material/"},{"linkname":"Tutorial für Angular Material Navigation","url":"https://code-maze.com/angular-material-navigation/"}]}]});
+
+db.aperos.insert({"datum": ISODate("2020-12-15T19:00:31.679Z"),"teilnehmer":[0,1,2,4,6],"themen": [{"name":"Segeln","description": "Weltumselgelung","links": [{"linkname":"Vendee Globe Artikel","url":"https://segelreporter.com/regatta/vendee-globe-worauf-es-wirklich-ankommt-kleine-stories-rund-um-den-hochseesteg/"}]},{"name": "Paxcounter","description": "Zählt Paxe per WLAN","links":[{"linkname":"Paxcounter auf Github","url": "https://github.com/cyberman54/ESP32-Paxcounter"},{"Linkname": "Paxcounter Artikel in Heise","url":  "https://www.heise.de/make/meldung/Paxcounter-Personen-zaehlen-mit-WLAN-Modul-4301556.html"}]}]});
+
+### Prüfen, ob die Daten angekommen sind
+
+db.users.find().pretty();
+
+db.aperos.find().pretty();
